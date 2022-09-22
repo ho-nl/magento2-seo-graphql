@@ -1,0 +1,21 @@
+{
+    "name": "reach-digital/magento2-seo-graphql",
+    "description": "Reach Digital Seo Graphql",
+    "type": "magento2-component",
+    "license": "BSD-2-Clause",
+    "require": {
+        "elasticsearch/elasticsearch": "~6.1",
+        "magento/framework": "*",
+        "whitecube/lingua": "^1.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "~3.5.4",
+        "magento/magento-coding-standard": "*"
+    },
+    "repositories": {
+        "magento": {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    }
+}
