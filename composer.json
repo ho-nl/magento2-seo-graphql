@@ -1,6 +1,16 @@
 {
     "name": "reach-digital/magento2-seo-graphql",
-    "description": "Reach Digital Seo Graphql",
-    "type": "magento2-component",
-    "license": "BSD-2-Clause"
+    "description": "Magento2 SEO GraphQL",
+    "require": {
+        "magento/magento-composer-installer": "*"
+    },
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Paskel\\Seo\\": "src/"
+        }
+    }
 }
