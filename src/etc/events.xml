@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+ /**
+  * @author: Pasquale Convertini <pasqualeconvertini95@gmail.com>
+  * @github: @Pasquale95
+  *
+  * This file is subject to the terms and conditions defined in
+  * file 'LICENSE', which is part of this source code package.
+  */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="catalog_category_save_after">
+        <observer name="category_hreflang_save" instance="Paskel\Seo\Observer\Hreflang\CategorySave" />
+    </event>
+    <event name="catalog_product_save_after">
+        <observer name="product_hreflang_save" instance="Paskel\Seo\Observer\Hreflang\ProductSave" />
+    </event>
+    <event name="cms_page_save_after">
+        <observer name="product_hreflang_save" instance="Paskel\Seo\Observer\Hreflang\CmsPageSave" />
+    </event>
+    <event name="cms_page_prepare_save">
+        <observer name="preview_image" instance="Paskel\Seo\Observer\SocialMarkup\PreviewImage" />
+    </event>
+    <!-- To trigger hreflang updates when new configs are applied -->
+    <event name="admin_system_config_changed_section_seo">
+        <observer name="update_hreflang_on_config_save" instance="Paskel\Seo\Observer\Hreflang\ConfigSave" />
+    </event>
+    <!--<event name="catalog_product_delete_before">
+        <observer name="category_hreflang_delete" instance="Magento\MediaContentCatalog\Observer\ProductDelete" />
+    </event>
+    <event name="catalog_category_delete_before">
+        <observer name="product_hreflang_save" instance="Magento\MediaContentCatalog\Observer\CategoryDelete" />
+    </event>
+    -->
+</config>
