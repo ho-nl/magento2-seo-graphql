@@ -23,6 +23,8 @@ class Store implements ArrayInterface
      */
     protected StoreManagerInterface $storeManager;
 
+    protected $storeManagerDataList;
+
     /**
      * Store constructor.
      * @param StoreManagerInterface $storeManager
@@ -38,9 +40,11 @@ class Store implements ArrayInterface
      */
     public function toOptionArray()
     {
-        $storeManagerDataList = $this->storeManager->getStores();
+        if (!isset($this->storeManagerDataList)) {
+            $this->storeManagerDataList = $this->storeManager->getStores();
+        }
         $options = [];
-        foreach ($storeManagerDataList as $key => $value) {
+        foreach ($this->storeManagerDataList as $key => $value) {
             $options[] = [
                 'label' => $value['name'],
                 'value' => $key
