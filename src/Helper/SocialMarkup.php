@@ -86,7 +86,7 @@ class SocialMarkup extends AbstractHelper
     public function getSitename($storeId = null)
     {
         return $this->scopeConfig->getValue(
-            'seo/general/site_name',
+            'paskel_seo/general/site_name',
             ScopeInterface::SCOPE_STORE,
             $storeId
         );
@@ -100,7 +100,7 @@ class SocialMarkup extends AbstractHelper
     public function hideUnsetPropertiesInGraphQl()
     {
         return $this->scopeConfig->getValue(
-            'seo/socialMarkup/hide_unset_properties_graphql'
+            'paskel_seo/socialMarkup/hide_unset_properties_graphql'
         );
     }
 
@@ -114,7 +114,7 @@ class SocialMarkup extends AbstractHelper
     public function getImagePlaceholder($entityType, $storeId = null)
     {
         return $this->scopeConfig->getValue(
-            'seo/socialMarkup/' . str_replace("-", "_", $entityType) . '_placeholder',
+            'paskel_seo/socialMarkup/' . str_replace("-", "_", $entityType) . '_placeholder',
             ScopeInterface::SCOPE_STORE,
             $storeId
         );
@@ -129,7 +129,7 @@ class SocialMarkup extends AbstractHelper
     public function isTwitterCardEnabled($storeId = null)
     {
         return $this->scopeConfig->getValue(
-            'seo/socialMarkup/enable_twitter_card',
+            'paskel_seo/socialMarkup/enable_twitter_card',
             ScopeInterface::SCOPE_STORE,
             $storeId
         );
@@ -141,7 +141,7 @@ class SocialMarkup extends AbstractHelper
      */
     public function getTwitterCardType($storeId) {
         return $this->scopeConfig->getValue(
-            'seo/socialMarkup/twitter_card',
+            'paskel_seo/socialMarkup/twitter_card',
             ScopeInterface::SCOPE_STORE,
             $storeId
         );
@@ -153,7 +153,7 @@ class SocialMarkup extends AbstractHelper
      */
     public function getTwitterHandle($storeId) {
         return $this->scopeConfig->getValue(
-            'seo/socialMarkup/twitter_account_handle',
+            'paskel_seo/socialMarkup/twitter_account_handle',
             ScopeInterface::SCOPE_STORE,
             $storeId
         );

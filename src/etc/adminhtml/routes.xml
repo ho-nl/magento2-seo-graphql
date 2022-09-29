@@ -10,7 +10,7 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="admin">
-        <route id="seo" frontName="seo">
+        <route id="paskel_seo" frontName="paskel_seo">
             <module name="Paskel_Seo" />
         </route>
     </router>

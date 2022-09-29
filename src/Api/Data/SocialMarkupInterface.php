@@ -24,7 +24,7 @@ interface SocialMarkupInterface
     /**
      * Relative path where placeholder images are stored.
      */
-    const PLACEHOLDER_FOLDER = "seo/socialMarkup/placeholder";
+    const PLACEHOLDER_FOLDER = "paskel_seo/socialMarkup/placeholder";
 
     /**
      * @param $item

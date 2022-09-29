@@ -156,7 +156,7 @@ class Product implements SchemaOrgInterface
      */
     public function isEnabled($storeId = null) {
         return $this->scopeConfig->getValue(
-            'seo/schemaOrg/enable_product',
+            'paskel_seo/schemaOrg/enable_product',
             ScopeInterface::SCOPE_STORE,
             $storeId
         );

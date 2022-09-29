@@ -107,7 +107,7 @@ class Hreflang extends AbstractHelper
 
         // check if hreflang is enabled for the entity type
         $useHreflang = $this->scopeConfig->getValue(
-            'seo/hreflang/' . str_replace("-", "_", $entityType) . '_hreflang',
+            'paskel_seo/hreflang/' . str_replace("-", "_", $entityType) . '_hreflang',
             ScopeInterface::SCOPE_STORE,
             $storeId
         );

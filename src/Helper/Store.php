@@ -74,7 +74,7 @@ class Store extends AbstractHelper
         $code = null;
 
         $xDefaultStoreId = $this->scopeConfig->getValue(
-            'seo/hreflang/x_default_hreflang'
+            'paskel_seo/hreflang/x_default_hreflang'
         );
 
         // return x-default as hreflang for x-default store
@@ -83,7 +83,7 @@ class Store extends AbstractHelper
         }
 
         $useLocale = $this->scopeConfig->getValue(
-            'seo/hreflang/use_locale',
+            'paskel_seo/hreflang/use_locale',
             ScopeInterface::SCOPE_STORE,
             $storeId
         );
@@ -98,7 +98,7 @@ class Store extends AbstractHelper
         } else {
             // otherwise, check for possible custom options
             $customCode = $this->scopeConfig->getValue(
-                'seo/hreflang/custom_hreflang',
+                'paskel_seo/hreflang/custom_hreflang',
                 ScopeInterface::SCOPE_STORE,
                 $storeId
             );
@@ -121,7 +121,7 @@ class Store extends AbstractHelper
             if (!isset($code)) {
                 //if no custom options, look at the standard hreflang
                 $code = $this->scopeConfig->getValue(
-                    'seo/hreflang/hreflang_lang',
+                    'paskel_seo/hreflang/hreflang_lang',
                     ScopeInterface::SCOPE_STORE,
                     $storeId
                 );

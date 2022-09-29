@@ -14,7 +14,7 @@
             <label>Paskel</label>
         </tab>
         <!-- SEO -->
-        <section id="seo" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+        <section id="paskel_seo" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>SEO</label>
             <tab>paskel</tab>
             <resource>Paskel_Seo::seo_config</resource>
@@ -31,7 +31,7 @@
                     <backend_model>Magento\Config\Model\Config\Backend\Baseurl</backend_model>
                     <comment>Specify the domain at with the PWA frontend is reachable e.g. http://0.0.0.0:1000/</comment>
                     <depends>
-                        <field id="seo/general/use_pwa_frontend">1</field>
+                        <field id="paskel_seo/general/use_pwa_frontend">1</field>
                     </depends>
                 </field>
                 <field id="site_name" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
@@ -41,8 +41,8 @@
                 <field id="website_logo" type="image" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Website logo</label>
                     <backend_model>Magento\Config\Model\Config\Backend\Image</backend_model>
-                    <upload_dir config="system/filesystem/media" scope_info="1">seo/general/logo</upload_dir>
-                    <base_url type="media" scope_info="1">seo/general/logo</base_url>
+                    <upload_dir config="system/filesystem/media" scope_info="1">paskel_seo/general/logo</upload_dir>
+                    <base_url type="media" scope_info="1">paskel_seo/general/logo</base_url>
                 </field>
             </group>
             <!-- HREFLANG -->
@@ -102,20 +102,20 @@
                 <field id="product_placeholder" type="image" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Product Image Placeholder</label>
                     <backend_model>Magento\Config\Model\Config\Backend\Image</backend_model>
-                    <upload_dir config="system/filesystem/media" scope_info="1">seo/socialMarkup/placeholder</upload_dir>
-                    <base_url type="media" scope_info="1">seo/socialMarkup/placeholder</base_url>
+                    <upload_dir config="system/filesystem/media" scope_info="1">paskel_seo/socialMarkup/placeholder</upload_dir>
+                    <base_url type="media" scope_info="1">paskel_seo/socialMarkup/placeholder</base_url>
                 </field>
                 <field id="category_placeholder" type="image" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Category Image Placeholder</label>
                     <backend_model>Magento\Config\Model\Config\Backend\Image</backend_model>
-                    <upload_dir config="system/filesystem/media" scope_info="1">seo/socialMarkup/placeholder</upload_dir>
-                    <base_url type="media" scope_info="1">seo/socialMarkup/placeholder</base_url>
+                    <upload_dir config="system/filesystem/media" scope_info="1">paskel_seo/socialMarkup/placeholder</upload_dir>
+                    <base_url type="media" scope_info="1">paskel_seo/socialMarkup/placeholder</base_url>
                 </field>
                 <field id="cms_page_placeholder" type="image" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>CMS Page Image Placeholder</label>
                     <backend_model>Magento\Config\Model\Config\Backend\Image</backend_model>
-                    <upload_dir config="system/filesystem/media" scope_info="1">seo/socialMarkup/placeholder</upload_dir>
-                    <base_url type="media" scope_info="1">seo/socialMarkup/placeholder</base_url>
+                    <upload_dir config="system/filesystem/media" scope_info="1">paskel_seo/socialMarkup/placeholder</upload_dir>
+                    <base_url type="media" scope_info="1">paskel_seo/socialMarkup/placeholder</base_url>
                 </field>
                 <field id="enable_twitter_card" translate="label" sortOrder="50" type="select" showInDefault="1">
                     <label>Enable Twitter Card</label>

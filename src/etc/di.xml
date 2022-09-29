@@ -25,8 +25,8 @@
     <!-- To setup the input args for the image uploader constructor -->
     <virtualType name="Paskel\Seo\Model\SocialMarkup\ImageUpload" type="Magento\Catalog\Model\ImageUploader">
         <arguments>
-            <argument name="baseTmpPath" xsi:type="string">seo/tmp/cmspage</argument>
-            <argument name="basePath" xsi:type="string">seo/cmspage</argument>
+            <argument name="baseTmpPath" xsi:type="string">paskel_seo/tmp/cmspage</argument>
+            <argument name="basePath" xsi:type="string">paskel_seo/cmspage</argument>
             <argument name="allowedExtensions" xsi:type="array">
                 <item name="jpg" xsi:type="string">jpg</item>
                 <item name="jpeg" xsi:type="string">jpeg</item>

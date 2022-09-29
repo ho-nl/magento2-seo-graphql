@@ -88,7 +88,7 @@ class Organization extends AbstractSchemaOrg
      */
     public function isEnabled($storeId = null) {
         return $this->scopeConfig->getValue(
-            'seo/schemaOrg/enable_organization',
+            'paskel_seo/schemaOrg/enable_organization',
             ScopeInterface::SCOPE_STORE,
             $storeId
         );
@@ -121,7 +121,7 @@ class Organization extends AbstractSchemaOrg
     protected function getOrganizationName($storeId = null)
     {
         return $this->scopeConfig->getValue(
-            'seo/schemaOrg/organization_name',
+            'paskel_seo/schemaOrg/organization_name',
             ScopeInterface::SCOPE_STORE,
             $storeId
         );
@@ -135,7 +135,7 @@ class Organization extends AbstractSchemaOrg
      */
     protected function getOrganizationUrl($storeId = null) {
         return $this->scopeConfig->getValue(
-            'seo/schemaOrg/organization_url',
+            'paskel_seo/schemaOrg/organization_url',
             ScopeInterface::SCOPE_STORE,
             $storeId
         );
@@ -149,7 +149,7 @@ class Organization extends AbstractSchemaOrg
      */
     protected function getLogo($store) {
         $logo = $this->scopeConfig->getValue(
-            'seo/general/website_logo',
+            'paskel_seo/general/website_logo',
             ScopeInterface::SCOPE_STORE,
             $store->getId()
         );
@@ -157,7 +157,7 @@ class Organization extends AbstractSchemaOrg
             // if logo is set, make it an absolute URL
             return UrlHelper::pinchUrl(
                 $store->getBaseUrl(UrlInterface::URL_TYPE_MEDIA) .
-                'seo/general/logo',
+                'paskel_seo/general/logo',
                 $logo
             );
         }
@@ -172,7 +172,7 @@ class Organization extends AbstractSchemaOrg
      */
     protected function getReferenceLinks($storeId) {
         $relativeLinks = $this->scopeConfig->getValue(
-            'seo/schemaOrg/reference_links',
+            'paskel_seo/schemaOrg/reference_links',
             ScopeInterface::SCOPE_STORE,
             $storeId
         );

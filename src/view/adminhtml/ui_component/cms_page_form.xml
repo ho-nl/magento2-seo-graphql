@@ -19,7 +19,7 @@
                 <imageUploader>
                     <settings>
                         <uploaderConfig>
-                            <param xsi:type="url" name="url" path="seo/socialmarkup/imageupload"/>
+                            <param xsi:type="url" name="url" path="paskel_seo/socialmarkup/imageupload"/>
                             <param xsi:type="string" name="paramName">social_markup_image</param>
                         </uploaderConfig>
                     </settings>

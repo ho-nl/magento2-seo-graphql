@@ -85,7 +85,7 @@ class Website extends AbstractSchemaOrg
      */
     public function isEnabled($storeId = null) {
         return $this->scopeConfig->getValue(
-            'seo/schemaOrg/enable_website',
+            'paskel_seo/schemaOrg/enable_website',
             ScopeInterface::SCOPE_STORE,
             $storeId
         );
@@ -117,7 +117,7 @@ class Website extends AbstractSchemaOrg
      */
     protected function getWebsiteName($storeId = null) {
         return $this->scopeConfig->getValue(
-            'seo/general/site_name',
+            'paskel_seo/general/site_name',
             ScopeInterface::SCOPE_STORE,
             $storeId
         );
